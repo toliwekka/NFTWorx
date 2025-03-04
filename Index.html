@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NFT Consult offers a mental well-being assessment powered by Toli Wekka to help you take the first step toward better mental health.">
+  <meta name="keywords" content="Mental Well-being, Mental Health, Assessment, NFT Consult, Toli Wekka">
+  <title>NFT Consult | Mental Well-being Assessment | Powered by Toli Wekka</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav id="nft-navbar" class="navbar navbar-expand-lg shadow-lg rounded-3" style="background-color: #d9e67b; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); border-radius: 15px;">
+  <div class="container py-3">
+    <div class="d-flex align-items-center">
+      <img src="logo.jpeg" alt="Logo" style="width: 80px; height: 90px; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); margin-right: 15px;">
+<div>
+  <h1 class="mb-1 text-pop">Mental Well-Being Assessment</h1>
+  <p class="mb-0 text-pop-small">
+    Take the first step towards better mental well-being with our insightful assessment.
+  </p>
+</div>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link px-3 py-2 rounded-3" href="#about" style="color: #930d0e; transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#dfe7cc';" onmouseout="this.style.backgroundColor='transparent';">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3 py-2 rounded-3" href="#consent" style="color: #930d0e; transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#dfe7cc';" onmouseout="this.style.backgroundColor='transparent';">Consent</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3 py-2 rounded-3" href="#assessment" style="color: #930d0e; transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#dfe7cc';" onmouseout="this.style.backgroundColor='transparent';">Assessment</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3 py-2 rounded-3" href="#results" style="color: #930d0e; transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#dfe7cc';" onmouseout="this.style.backgroundColor='transparent';">Results</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3 py-2 rounded-3" href="#contact" style="color: #930d0e; transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#dfe7cc';" onmouseout="this.style.backgroundColor='transparent';">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+  <!-- Main Content -->
+  <div class="container main-container" id="main-content">
+    <!-- About Section -->
+    <div class="custom-card" id="about">
+      <h2>About the Assessment</h2>
+      <p>This confidential assessment provides insights into your mental health, helping you take actionable steps towards well-being.</p>
+    </div>
+
+    <!-- Steps Section -->
+    <div class="steps-section">
+      <div class="step">
+        <h3>Step 1</h3>
+        <p>Answer a series of simple, insightful questions about your mental health.</p>
+      </div>
+      <div class="step">
+        <h3>Step 2</h3>
+        <p>Receive your personalized report, highlighting key strengths and areas for growth, with a small administrative fee.</p>
+      </div>
+      <div class="step">
+        <h3>Step 3</h3>
+        <p>Access resources and recommendations tailored to your needs.</p>
+      </div>
+    </div>
+
+    <!-- Call-to-Action Button -->
+    <div class="button-container">
+      <button id="startAssessmentButton">Start Assessment</button>
+    </div>
+  </div>
+
+  <!-- Consent Page -->
+  <div id="consent-page" class="container mt-5" style="display: none;">
+
+    <div class="custom-card" id="consent">
+        <h1>Consent for Assessment</h1>
+        <p>We value your privacy and need your consent to proceed.</p>
+    </div>
+
+        <div class="container">
+      <!-- Personal Details Section -->
+
+
+
+<div class="card mb-4" style="background-color: #d0e4d1; border-radius: 10px; overflow: hidden;">
+    <div class="card-body">
+        <div class="mini-card" style="background-color: #f5fdf7; border-radius: 8px; padding: 15px;">
+            <div class="mini-card-header" style="border-radius: 8px;">Personal Details</div>
+            <div class="form-group">
+                <label for="title">Title</label>
+                <select id="title" class="form-select" style="border-radius: 5px;">
+                    <option value="" selected disabled>Select Title...</option>
+                    <option value="Mr.">Mr.</option>
+                    <option value="Mrs.">Mrs.</option>
+                    <option value="Ms.">Ms.</option>
+                    <option value="Dr.">Dr.</option>
+                    <option value="Prof.">Prof.</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" class="form-control" placeholder="Enter your first name" style="border-radius: 5px;">
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" class="form-control" placeholder="Enter your last name" style="border-radius: 5px;">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <!-- Contact Details Section -->
+<div class="card mb-4" style="background-color: #d0e4d1; border-radius: 10px; overflow: hidden;">
+    <div class="card-body">
+        <div class="mini-card" style="background-color: #f5fdf7; border-radius: 8px; padding: 15px;">
+          <div class="mini-card-header">Contact Details</div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" class="form-control" placeholder="Enter your email">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" class="form-control" placeholder="Enter your phone number">
+          </div>
+        </div>
+          </div>
+        </div>
+
+        <!-- Age Group & Gender Section -->
+<div class="card mb-4" style="background-color: #d0e4d1; border-radius: 10px; overflow: hidden;">
+    <div class="card-body">
+        <div class="mini-card" style="background-color: #f5fdf7; border-radius: 8px; padding: 15px;">
+          <div class="mini-card-header">Age Group & Gender</div>
+          <div class="form-group">
+            <label for="age-group">Age Group</label>
+            <select id="age-group" class="form-select">
+              <option value="" selected disabled>Select Age Group...</option>
+              <option value="13-19">13-19</option>
+              <option value="20-24">20-24</option>
+              <option value="25-34">25-34</option>
+              <option value="35-44">35-44</option>
+              <option value="45-54">45-54</option>
+              <option value="55+">55+</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Gender</label>
+            <div class="form-check">
+              <input type="radio" id="male" name="gender" class="form-check-input" value="Male">
+              <label for="male" class="form-check-label">Male</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" id="female" name="gender" class="form-check-input" value="Female">
+              <label for="female" class="form-check-label">Female</label>
+            </div>
+          </div>
+        </div>
+          </div>
+        </div>
+
+        <!-- Employment & Education Section -->
+<div class="card mb-4" style="background-color: #d0e4d1; border-radius: 10px; overflow: hidden;">
+    <div class="card-body">
+        <div class="mini-card" style="background-color: #f5fdf7; border-radius: 8px; padding: 15px;">
+          <div class="mini-card-header">Employment & Education Level</div>
+          <div class="form-group">
+            <label for="employment">Employment Status</label>
+            <select id="employment" class="form-select">
+              <option value="" selected disabled>Select Employment Status...</option>
+              <option value="Employed">Employed</option>
+              <option value="Unemployed">Unemployed</option>
+              <option value="Student">Student</option>
+              <option value="Retired">Retired</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="education">Education Level</label>
+            <select id="education" class="form-select">
+              <option value="" selected disabled>Select Education Level...</option>
+              <option value="Primary">Primary</option>
+              <option value="Secondary">Secondary</option>
+              <option value="Tertiary">Tertiary</option>
+              <option value="Postgraduate">Postgraduate</option>
+            </select>
+          </div>
+        </div>
+          </div>
+        </div>
+
+
+        <!-- Conditional Inputs for Students -->
+        <div class="conditional-input" id="student-inputs" style="display: none;">
+        <div class="mini-card" style="background-color: #f5fdf7; border-radius: 8px; padding: 15px;">
+            <div class="mini-card-header">Student Information</div>
+            <div class="form-group">
+              <label for="start-time">Time You Start School</label>
+              <input type="time" id="start-time">
+            </div>
+            <div class="form-group">
+              <label for="has-breakfast">Do you have breakfast before school?</label>
+              <div class="radio-group">
+                <div>
+                  <input type="radio" id="yes" name="breakfast" value="Yes">
+                  <label for="yes">Yes</label>
+                </div>
+                <div>
+                  <input type="radio" id="no" name="breakfast" value="No">
+                  <label for="no">No</label>
+                </div>
+              </div>
+            </div>
+            <!-- Additional Fields for Students -->
+            <div class="form-group">
+              <label for="grade">Grade or Class</label>
+              <input type="text" id="grade" placeholder="Enter Grade or Class">
+            </div>
+            <div class="form-group">
+              <label for="school-type">School Type</label>
+              <select id="school-type">
+                <option value="" selected disabled>Select School Type...</option>
+                <option value="Day">Day School</option>
+                <option value="Boarding">Boarding School</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="school-name">School Name</label>
+              <input type="text" id="school-name" placeholder="Enter School Name">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Occupation for Employed -->
+      <div class="conditional-input" id="occupation-input" style="display: none;">
+        <div class="mini-card" style="background-color: #f5fdf7; border-radius: 8px; padding: 15px;">
+          <div class="mini-card-header">Occupation</div>
+          <div class="form-group">
+            <label for="occupation">Occupation</label>
+            <select id="occupation">
+              <option value="" selected disabled>Select Occupation...</option>
+              <option value="Boda Boda Rider">Boda Boda Rider</option>
+              <option value="Taxi Driver">Taxi Driver</option>
+              <option value="Bus Driver">Bus Driver</option>
+              <option value="Truck Driver">Truck Driver</option>
+              <option value="Teacher">Teacher</option>
+              <option value="Farmer">Farmer</option>
+              <option value="Nurse">Nurse</option>
+              <option value="Doctor">Doctor</option>
+              <option value="Engineer">Engineer</option>
+              <option value="Other">Other</option>
+            </select>
+            <div id="other-occupation" class="form-group" style="display: none;">
+              <label for="custom-occupation">Custom Occupation</label>
+              <input type="text" id="custom-occupation" placeholder="Enter your occupation">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+  <!-- Consent Checkbox Card -->
+  <div class="card mb-4" style="background-color: #d0e4d1;">
+    <div class="card-body">
+        <div class="mini-card" style="background-color: #f5fdf7; border-radius: 8px; padding: 15px;">
+      <h5 class="card-title">Consent</h5>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="consent" required>
+        <label class="form-check-label" for="consent">
+          I consent to the processing of my data for the purpose of this assessment.
+        </label>
+      </div>
+    </div>
+    </div>
+  </div>
+
+<!-- Consent Checkbox Buttons -->
+<div class="card mb-4" style="background-color: #d0e4d1;">
+  <div class="card-body">
+        <div class="mini-card" style="background-color: #f5fdf7; border-radius: 8px; padding: 15px;">
+    <!-- Button Container -->
+    <div class="d-flex justify-content-between">
+      <!-- Proceed to Assessment Button -->
+      
+      <button type="submit" class="btn" style="background-color: #930d0e; color: white; border: none;">Proceed to Assessment</button>
+      <!-- Back Button with Lighter Shade -->
+      <button type="button" class="btn btn-light" id="backToMain">Back</button>
+    </div>
+  </div>
+  </div>
+</div>
+
+
+      </div>
+
+
+
+
+  </div>
+  </div>
+
+
+
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 NFT Consult | Powered By Toli Wekka. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
